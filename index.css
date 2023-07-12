@@ -885,7 +885,7 @@ footer {
   header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 999999999;
@@ -894,7 +894,8 @@ footer {
   }
   .logo-banner {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 5%;
     width: 80%;
     /* max-height: 20vh; */
     background-color: #f8dc17;
