@@ -193,11 +193,10 @@ footer {
   /* height: 221px; */
   /* margin-top: -2%; */
   padding-bottom: 20px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: #17100a;
-  gap: 1px;
-  flex-shrink: 0;
+  padding: 2% 5%;
 }
 
 .owner-name a {
@@ -228,8 +227,12 @@ footer {
   letter-spacing: 5px;
 }
 
+.social-links a {
+  text-decoration: none;
+}
+
 .social-links a svg {
-  padding-left: 0.5rem;
+  padding: 0 0.25rem;
 }
 
 .social-links a svg:hover {
