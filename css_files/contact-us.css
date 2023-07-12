@@ -1,0 +1,188 @@
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 8rem;
+}
+
+.contact-heading {
+  color: #4a1c00;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 4.8px;
+}
+
+.contact-subheading {
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 3.75px;
+  text-decoration-line: underline;
+}
+
+.map-container {
+  display: flex;
+  padding-top: 5%;
+  justify-content: center;
+}
+
+.left-map,
+.right-map {
+  width: 40%;
+  margin: 0 2%;
+}
+.map iframe {
+  z-index: 1;
+}
+
+.address-box {
+  color: #4a1c00;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 99;
+  margin: 0 auto;
+  margin-top: -30%;
+  /* glass */
+  /* From https://css.glass */
+  background: rgba(248, 220, 23, 0.59);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(11.6px);
+  border: 3px solid rgba(248, 220, 23, 0.98);
+}
+
+.address-box a {
+  text-decoration: none;
+  color: #4a1c00;
+}
+
+.address-title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 2.1px;
+  padding: 1rem 0.25rem;
+}
+
+.full-address-container,
+.phone-container,
+.email-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.full-address-content,
+.phone-content,
+.email-content {
+  letter-spacing: 1.08px;
+}
+
+.phone-content:hover,
+.email-content:hover {
+  transform: scale(1.1);
+  transition: 700ms;
+}
+
+.svg-icon {
+  width: 100%;
+}
+
+/* //animated button */
+.get-directions {
+  padding: 0.65rem 1rem;
+  margin: 5% 10%;
+  margin-left: auto;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.get-directions:hover {
+  transform: scale(1.1);
+  transition: all ease 300ms;
+}
+.link-fx-1 {
+  color: #4a1c00;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 6px;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.link-fx-1:hover {
+  color: #746057;
+}
+
+.link-fx-1:hover::before {
+  transform: translateX(17px) scaleX(0);
+  transition: transform 0.2s;
+}
+
+.link-fx-1:hover .icon circle {
+  stroke-dashoffset: 200;
+  transition: stroke-dashoffset 0.2s 0.1s;
+}
+
+.link-fx-1:hover .icon line {
+  transform: rotate(-180deg);
+}
+
+.link-fx-1:hover .icon line:last-child {
+  transform: rotate(180deg);
+}
+
+.link-fx-1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform-origin: right center;
+  transition: transform 0.2s 0.1s;
+}
+
+.link-fx-1 .icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateX(100%) rotate(90deg);
+  font-size: 32px;
+}
+
+.icon {
+  --size: 1em;
+  height: var(--size);
+  width: var(--size);
+  display: inline-block;
+  color: inherit;
+  fill: currentColor;
+  line-height: 1;
+  flex-shrink: 0;
+  max-width: initial;
+}
+
+.link-fx-1 .icon circle {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transition: stroke-dashoffset 0.2s;
+}
+
+.link-fx-1 .icon line {
+  transition: transform 0.4s;
+  transform-origin: 13px 15px;
+}
+
+.link-fx-1 .icon line:last-child {
+  transform-origin: 19px 15px;
+}

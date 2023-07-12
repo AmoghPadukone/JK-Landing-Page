@@ -1,0 +1,120 @@
+.section1 {
+  background: var(--darkbg);
+}
+
+.hero {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  padding-top: 4rem;
+}
+
+.hero-text {
+  color: white;
+  padding: 0 5%;
+  word-wrap: break-word;
+  text-align: center;
+  width: 70%;
+
+  margin: 9% 0;
+  letter-spacing: 2.1px;
+}
+
+.vision {
+  padding: 5% 2%;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: normal;
+  letter-spacing: 2.1px;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.view-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.view-menu-button {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --hover-color: #d2d2d2;
+  --arrow-width: 35px;
+  --arrow-stroke: 6px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 0.4em 0.6em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-size: 1.5rem;
+  font-weight: 400;
+  /* text-decoration: underline; */
+}
+
+.view-menu-button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-menu-button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.view-menu-button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.view-menu-button:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.1);
+  transition: all 300ms;
+}
+
+.view-menu-button:hover .arrow {
+  background: var(--secondary-color);
+  transition: all 300ms;
+}
+
+.view-menu-button:hover .arrow:before {
+  right: 0;
+}
+
+/* wave styles */
+
+.spacer {
+  aspect-ratio: 900/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* margin-top: -10px; */
+}
+
+.layer1 {
+  background-image: url("./assets/wave4.svg");
+}
