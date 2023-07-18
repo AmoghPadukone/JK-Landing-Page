@@ -489,7 +489,7 @@ footer {
 }
 .aboutus-image img {
   border-radius: 60px;
-  box-shadow: 15px 15px 40px 10px rgba(106, 47, 3, 0.4);
+  box-shadow: 10px 10px 40px 6px rgba(106, 47, 3, 0.4);
   width: 100%;
   align-self: center;
 }
