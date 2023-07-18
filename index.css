@@ -553,14 +553,16 @@ footer {
 }
 
 .left-menu {
-  width: 50%;
+  width: 53%;
+  /* width: 50%; */
 }
 .left-menu img {
   width: 100%;
 }
 
 .right-menu {
-  width: 50%;
+  width: 47%;
+  /* width: 50%; */
 }
 
 .right-menu img {
@@ -643,7 +645,8 @@ footer {
 
 .full-address-container,
 .phone-container,
-.email-container {
+.email-container,
+.timings-container {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -652,12 +655,14 @@ footer {
 
 .full-address-content,
 .phone-content,
-.email-content {
+.email-content,
+.timings-container {
   letter-spacing: 1.08px;
 }
 
 .phone-content:hover,
-.email-content:hover {
+.email-content:hover,
+.timings-content:hover {
   transform: scale(1.1);
   transition: 700ms;
 }
